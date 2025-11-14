@@ -1,0 +1,34 @@
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link{
+    color: #FF8C00;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #FF8C00;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+select{
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 180px
+}
+
+#container{
+    width: 600px;
+    padding: 10px;
+    margin:auto;
+    border: 1px solid #FFFFFF 
+
+}

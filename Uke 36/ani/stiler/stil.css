@@ -1,0 +1,38 @@
+#container{
+    position: relative;
+    width: 50%
+}
+
+#image{
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+#overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 3s ease; 
+    background-color: #00be63
+}
+
+/*fører muspeker over container*/
+
+#container:hover #overlay{
+    bottom: 0; /*fyller helt tilk bunn*/
+    height: 100%; 
+}
+
+#text{
+    color: #FFFFFF;
+    font-size: 44px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

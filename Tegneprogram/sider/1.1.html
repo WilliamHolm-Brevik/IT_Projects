@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stiler/stil.css" />
+    <title>Tegneprogram v1.0</title>
+</head>
+<body>
+    <canvas id="canPaint" width="500" height="500"></canvas>
+    <p>Linje:</p>
+    Sett start X&Y: <br/>
+    <input type="number" id="txtStartX" min="1" max="500"/>
+    <input type="number" id="txtStartY" min="1" max="500"/> <br>
+    Sett slutt X&Y: <br/>
+    <input type="number" id="txtSluttX" min="1" max="500"/>
+    <input type="number" id="txtSluttY" min="1" max="500"/>
+    <button id="btnDraw" onclick="tegnStrek()"> Tegn strek: </button> 
+
+
+    <p>Firkant:</p>
+    Sett start X&Y: <br/>
+    <input type="number" id="txtFirX" min="1" max="500"/>
+    <input type="number" id="txtFirY" min="1" max="500"/> <br>
+    Sett slutt X&Y: <br/>
+    <input type="number" id="txtFirB" min="1" max="500"/>
+    <input type="number" id="txtFirH" min="1" max="500"/> <button id="btnSquare" onclick="tegnFirkant()"> Tegn strek: </button> 
+
+
+    <p>Sirkel:</p>
+    Sett start X&Y: <br/>
+    <input type="number" id="txtSirX" min="1" max="500"/>
+    <input type="number" id="txtSirY" min="1" max="500"/> <br>
+    Sett Radius <br/>
+    <input type="number" id="txtSirR" min="1" max="500"/><button id="btnCircle" onclick="tegnSirkel()"> Tegn strek: </button> 
+
+
+    <p>
+        Ny farge:<input type="color" id="colFarge">
+        Ny tykkelse:<input type="range" min="1" max="30" value="3" id="rngTykkelse">
+        <input type="number" id="txtTykk" readonly />
+        <br />
+    </p>
+
+    <script src="../script/1.1.js"></script>
+</body>
+</html>

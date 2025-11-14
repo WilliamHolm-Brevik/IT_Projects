@@ -1,0 +1,61 @@
+/*Forandrer fonten til hele siden*/
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*Gjør slik at siden får columns*/
+.row {
+    display: flex;
+  }
+  
+.column {
+    padding: 10px;
+}
+
+.column2 {
+  margin-left: auto;
+  height:auto;
+  padding: 30px;
+  border-style: solid;
+  border-color: #cd6767;
+}
+
+th, td {
+    border: 1px solid #ddd;
+  }
+th {background-color: #cd6767;}
+
+/*Gjør slik at button ser anderledes ut*/
+.button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000009;
+  font-size: 18px;
+  cursor: pointer;
+    transition-duration: 0.1s;
+  }
+  
+  .button:hover {
+    background-color: #cd6767;
+    color: #FFFFFF;
+  }
+
+#velgAntall{
+  border-color: #000000 ;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+#selSpillere {
+  padding: 2px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 50px;
+}
+
+

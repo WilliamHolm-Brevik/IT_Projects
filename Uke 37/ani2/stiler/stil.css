@@ -1,0 +1,55 @@
+/* endre bredden på en bakgrunn*/
+
+#ani1{
+    width: 110px;
+    height: 100px;
+    background-color: #0000FF;
+    font-size: 24pt;
+    transition: width 2s linear 1s; /* øker i bredden, varighet 2 sekunder. 1 sekund delay*/
+
+}
+
+#ani1:hover{
+    width: 1500px; /*ny bredde på id*/
+}
+
+#ani2{
+    width: 110px;
+    height: 100px;
+    background-color: #FFFFFF;
+    font-size: 24pt;
+    color: #FF0000;
+    animation-name: farger; /*navn på animasjon som jeg trenger etterpå til keyframes */
+    animation-duration: 25s; /*varighet på animasjon */
+    animation-iteration-count: infinite; /*animasjon går i løkke*/
+    animation-direction: alternate; /* først baklengs, så forlengs */
+}
+
+/*skifter farge fra hvit til svart på 5 sekunder*/
+@keyframes farger{
+    from{background-color: #FF0000;}
+    to{background-color: #000000;}
+}
+
+#ani3{
+    width: 110px;
+    height: 100px;
+    background-color: #FF0000;
+    font-size: 24pt;
+    color: #FFFFFF;
+    position: relative; /* for kunne flytte på objekter*/
+    animation-name: bevegelse; /*navn på animasjon som jeg trenger etterpå til keyframes */
+    animation-duration: 0.3s; /*varighet på animasjon */
+    animation-iteration-count: infinite; /*animasjon går i løkke*/
+    animation-direction: alternate; /* først baklengs, så forlengs */
+}
+
+/*endre plassering og bakgrunnsfarge, varigheten skal være i 5s*/
+/*husk at left = x - aksen, top = y- aksen og origo (0, 0) er oppe i venstre hjørne */
+@keyframes bevegelse{
+    0%{background-color: #FF0000; left:0px; top:0px;}
+    25%{background-color: #FFFF00; left:1000px; top:0px;}
+    50%{background-color: #0000FF; left:500px; top:300px;}
+    75%{background-color: #00FF00; left:0px; top:200px;}
+    100%{background-color: #FF0000; left:0px; top:0px;}
+}

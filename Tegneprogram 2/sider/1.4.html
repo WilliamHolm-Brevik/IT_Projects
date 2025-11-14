@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stiler/stil.css" />
+    <title>Tegneprogram v1.4</title>
+</head>
+<body>
+    <canvas id="canPaint" width="1000" height="500"></canvas>
+    <br/>
+    Antall:
+    <br />
+    <input type="number" id="txtAnt1" value="50" />
+    <button id="btnStrek" onclick="tegnStreker()">Tegn streker</button>
+    <br />
+    Antall:
+    <br />
+    <input type="number" id="txtAnt2" value="50" />
+    <button id="btnFigur" onclick="tegnFigurer()">Tegn figuerer</button>
+    <br />
+    <button id="btnGrid" onclick="tegnGriddy();">Tegn griddy</buttton>
+    <button id="btnDelete" onclick="slett();">Slett</buttton>
+    <script src="../script/1.4.js"></script>
+</body>
+</html>

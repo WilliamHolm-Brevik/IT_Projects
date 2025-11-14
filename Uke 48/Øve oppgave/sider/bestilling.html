@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Bestilling</title>
+    <link rel="stylsheet" href="../stiler/bestilling1.css" />
+</head>
+<body>
+    <div id="main">
+        <p id="headline">Bestilling</p>
+        <div id="reg">
+            <h1>Bestill her</h1>
+            Navn: <br/>
+            <input type="text" id="txtName" placeholder="skriv inn fullt nvn ">
+            Epost: <br/>
+            <input type="text" id="txtEmail" placeholder="skriv inn epost adresse">
+            Fødselsdato <br/>
+            <input type="date" id="txtdatBorn"/><br/>
+            Favorit kunstner <br/>
+            <input type="text" id="selKunstner"></select><br>
+            Bestill trøye<br/>
+            <input type="radio" name="tshirt" id="rbTS1" checked> Small
+            <input type="radio" name="tshirt" id="rbTS2" checked> Medium
+            <input type="radio" name="tshirt" id="rbTS3" checked> Large
+            <input type="radio" name="tshirt" id="rbTS4" checked> Extra Large
+            <br>
+            Registrer for nyhetsbrev: <input type="checkbox" id="chbNews" />
+            <button id="btnReg" onclick="reg();">Bestill</button>
+        </div>
+    </div>
+    <script src="../script/bestilling.js"></script>
+</body>
+</html>

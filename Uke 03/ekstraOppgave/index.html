@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stiler/stil.css">
+    <title>Uke 3: ekstraoppgave</title>
+</head>
+<body>
+    <select id="selFarger" onchange="endre();"></select>
+    <a href="sider/side2.html">Side 2</a>
+    <p>
+        <table>
+            <tr>
+                <td><p id="utskrift"></p></td>
+                <!--Her kommer google chart-->
+                <td><div id="diagram"></div></td>
+            </tr>
+        </table>
+    </p>
+    <p>
+        <select id="selMedia"></select>
+        <input type="number" id="txtAntall">
+        <btn id="btnAntall" onclick="antall();">Nytt antall</btn>
+    </p>
+    <p>
+        <input type="text" id="txtNavn"> <br/><br>
+        <input type="radio" name="media" id="rbM1" value="1">Facebooke<br>
+        <input type="radio" name="media" id="rbM2" value="2">Youtube<br>
+        <input type="radio" name="media" id="rbM3" value="3">Whatsapp<br>
+        <input type="radio" name="media" id="rbM4" value="4">Instagram<br>
+        <input type="radio" name="media" id="rbM5" value="5">FB messager<br>
+        <input type="radio" name="media" id="rbM6" value="6">WeChat<br>
+        <br>
+        <button id="btnReg" onclick="reg();">Registrer</button>
+    </p>
+    <p id="utskrift2"></p>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script/script1.js"></script>
+
+</body>
+</html>

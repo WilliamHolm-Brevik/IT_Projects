@@ -1,0 +1,151 @@
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: url('../bilder/fredrikstadnatta.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+#wrapper{
+    font-size: 11px;
+    display: flex; /* gjør den om til en flexbox */
+    flex-direction: row; /*legger boksene vannrett ikke leddrett*/
+    flex-wrap: wrap; /*plasserer elementer vannrett og på ny linje under om bredden er full*/
+    width: 100%;
+    top: -100px;
+    height: 40px;
+    margin: auto; /*sentrerer innhold*/
+
+
+}
+
+a {
+    border-bottom: 1px solid #FF0000;
+    padding-bottom: 5px;
+    }
+
+div {
+    background-color: #000000;
+}
+
+#innhold {
+    font-size: 30px;;
+}
+
+#innhold2{
+    font-size: 17px;;
+}
+
+th, td {
+    padding: 15px;
+    font-size: 19px;
+}
+
+#hoved {
+    width: 850px;
+    padding: 20px;;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+#hvit {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 102vw;
+    margin-left: calc(-50vw + 50%);
+    height: 70px;
+    z-index: -2;
+}
+
+#logo {
+    position: absolute;
+    top: 0.5%;
+    left: 70%;
+    width: 105px;
+    height: 50px;
+}
+
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+    width: 500px;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #443f3e;
+    color: white;
+  }
+
+
+/*hamburgermeny*/
+#container{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+}
+
+/*strekene i menyen*/
+.bar1, .bar2, .bar3{
+    width: 30px;
+    height: 4px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/*roterer øverste strek*/
+.change .bar1{
+    transform: rotate(-45deg) translate(-6px, 3px);
+}
+
+/*fjerner midterste strek*/
+.change .bar2{
+    opacity: 0;
+}
+
+/*roterer nederste strek*/
+.change .bar3{
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+/*skjuler linker ved oppstart*/
+.dropdown-content{
+    display: none;
+}
+
+/*linker*/
+a:link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF0000;
+    text-decoration: none;
+}

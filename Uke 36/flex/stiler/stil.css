@@ -1,0 +1,46 @@
+body{
+    background-color: #d3d3d3;
+}
+
+#wrapper{
+    display: flex; /* gjør den om til en flexbox */
+    flex-direction: row; /*legger boksene vannrett ikke leddrett*/
+    flex-wrap: wrap; /*plasserer elementer vannrett og på ny linje under om bredden er full*/
+    border-color: #FF0000; /*rød kantlinje*/
+    border-style: solid;
+    width: 800px;
+    margin: auto; /*sentrerer innhold*/
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 10px 10px #808080; /*lager dropshadow*/
+
+
+}
+
+header{
+    border-style: solid;
+    flex-basis: 100%;
+}
+
+nav{
+    border-style: solid;
+    flex-basis: 100%;
+    margin: 5px;
+}
+
+main{
+    border-style: solid;
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 200px;
+}
+aside{
+    border-style: solid;
+    flex-basis: 200px
+}
+
+footer{
+    border-style: solid;
+    flex-basis: 100%;
+
+}

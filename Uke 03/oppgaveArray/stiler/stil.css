@@ -1,0 +1,49 @@
+body{
+    font-family: "Montseeat", sans-serif
+}
+
+#innpakning{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bilde{
+    margin-left: 100px;
+
+}
+
+/*tabell vi lager i 35, bruker klasser da vi kan referere til navn uten å oppgi klassetyper*/
+.styled-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr{
+    background-color: #009879;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.styled th, .styled-table td{
+    padding: 11px 15px;
+}
+
+/*setter bakgrunnsfarge på annenhver */
+.styled-table tbody tr:nth-last-of-type(even){
+    background-color: #F3F3F3;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #0000FF
+}
+
+a:hover{
+    text-decoration: none;
+    color: #FF0000
+}

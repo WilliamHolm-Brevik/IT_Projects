@@ -1,0 +1,102 @@
+#innpakning{
+    width: 800px; /*bredden på layout */
+    background-color: #404040;
+    margin: auto; /*sentrer elementer, like stor marg på begge sider*/
+    display: flex; /*bruke flexbokser*/
+    flex-direction: column; /*plasserer bokser div> inni taggen i en kolonne (under hverandre)*/
+}
+
+#topptekst{
+    height: 80px;
+    background-color: #5d7b6f;
+    padding: 5px;
+    margin: 5px;
+    color: #FFFFFF;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+}
+
+#meny{
+    background-color: #a4c3a2;
+    padding: 10px;
+    margin: 5px;
+}
+
+#innhold{
+    background-color: #eae7d6;
+    padding: 10px;
+    margin: 5px;
+}
+
+/*viser siden vi er på*/
+#active{
+    color:#ffffff;
+}
+
+/*gjør liste til meny*/
+ul{
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+
+ul a{
+    padding: 10px 15px; 
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #a4c3a2;
+    font-size: 13px;
+}
+
+ul li{
+    display: inline; 
+}
+
+ul a:hover{
+    background-color: #b4b4b4;
+}
+
+/*oppgave 5*/
+#varer{
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside; /*setter listeelementene sekvelsielt, under hverandre*/
+}
+
+
+table, th, td {
+    border: 1px solid black;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: linen;
+    box-shadow: 0px 0px 20px grey:
+}
+
+table , th, td {
+    border: 1px solid grey;
+    padding : 5px
+}
+
+td, th {
+    width 100px
+}
+
+.dag {
+    background-color: coral;
+    border-bottom: 3px solid black;
+}
+
+.tid {
+    background-color: lemonchiffon;
+    font-weight: bold;
+    border-right : 3px solid black;
+}

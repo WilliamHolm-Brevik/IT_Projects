@@ -1,0 +1,95 @@
+#innpakning{
+    width: 800px; /*bredden på layout */
+    background-color: #404040;
+    margin: auto; /*sentrer elementer, like stor marg på begge sider*/
+    display: flex; /*bruke flexbokser*/
+    flex-direction: column; /*plasserer bokser div> inni taggen i en kolonne (under hverandre)*/
+}
+
+ul{
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    display: inline; 
+}
+ul a{
+    padding: 10px 30px; 
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #a9a9a9;
+}
+
+ul a:hover{
+    background-color: #e7f1cc;
+}
+
+#topptekst{
+    height: 120px;
+    background-color: #909090;
+    padding: 5px;
+    margin: 5px;
+    color: #000000;
+    font-size: 24pt;
+}
+
+#bilde{
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+}
+
+#meny{
+    background-color: #A9A9A9;
+    padding: 10px;
+    margin: 5px;
+}
+
+#innhold{
+    background-color: #909090;
+    padding: 10px;
+    margin: 5px;
+}
+
+#topptekst{
+    width: 160px;
+    height: 50px;
+    background-color: #FF0000;
+    font-size: 24pt;
+    color: #FFFFFF;
+    position: relative; /* for kunne flytte på objekter*/
+    animation-name: bevegelse; /*navn på animasjon som jeg trenger etterpå til keyframes */
+    animation-duration: 10s; /*varighet på animasjon */
+    animation-iteration-count: infinite; /*animasjon går i løkke*/
+    animation-direction: alternate; /* først baklengs, så forlengs */
+}
+
+#kanyewesthode{
+    width: 150px;
+    height: 200px;
+    font-size: 24pt;
+    color: #FFFFFF;
+    position: relative; /* for kunne flytte på objekter*/
+    animation-name: kanye; /*navn på animasjon som jeg trenger etterpå til keyframes */
+    animation-duration: 10s; /*varighet på animasjon */
+    animation-iteration-count: infinite; /*animasjon går i løkke*/
+    animation-direction: alternate; /* først baklengs, så forlengs */
+}
+
+@keyframes kanye{
+    0%{left:0px; top:-1000px;}
+    50%{left:0px; top:0px;}
+    100%{left:0px; top:0px;}
+
+}
+
+/*endre plassering og bakgrunnsfarge, varigheten skal være i 5s*/
+/*husk at left = x - aksen, top = y- aksen og origo (0, 0) er oppe i venstre hjørne */
+@keyframes bevegelse{
+    0%{background-color: #FF0000; left:-300px; top:0px;}
+    50%{background-color: #FFFF00; left:300px; top:0px;}
+    100%{background-color: #0000FF; left:-300px; top:0px;}
+
+}

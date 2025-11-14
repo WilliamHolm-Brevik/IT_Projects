@@ -1,0 +1,52 @@
+body{
+    background-image: url('../bilder/fredrikstadboen.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+#hm {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    background-color: #FFFFFF;
+    border: 5px solid #FF0000;
+}
+
+#fredrikstad {
+    left:100px;
+    top: 90px;
+    position: relative; /* for kunne flytte på objekter*/
+    animation-name: bevegelse; /*navn på animasjon som jeg trenger etterpå til keyframes */
+    animation-duration: 10s; /*varighet på animasjon */
+    animation-iteration-count: infinite; /*animasjon går i løkke*/
+}
+
+#fylkeslogo {
+    left:100px;
+    top: 90px;
+    position: relative; /* for kunne flytte på objekter*/
+    animation-name: bevegelse2; /*navn på animasjon som jeg trenger etterpå til keyframes */
+    animation-duration: 20s; /*varighet på animasjon */
+    animation-iteration-count: infinite; /*animasjon går i løkke*/
+}
+
+@keyframes bevegelse{
+    0%{
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+
+    100%{
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+
+@keyframes bevegelse2{
+    0%{left:200px; top:-150px; transform: translateX(-50%) translateY(-50%) rotate(0deg);}
+    25%{ left:700px; top:100px;transform: translateX(-50%) translateY(-50%) rotate(360deg);}
+    50%{left:1200px; top:-150px;transform: translateX(-50%) translateY(-50%) rotate(0deg);}
+    75%{left:700px; top:-350px; transform: translateX(-50%) translateY(-50%) rotate(360deg);}
+    100%{left:200px; top:-150px; transform: translateX(-50%) translateY(-50%) rotate(0deg);}
+}
+

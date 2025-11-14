@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS & JS</title>
+        <link rel="stylesheet" href="stiler/stil.css" />
+
+
+    </head>
+
+    <body>
+
+        <div id="innpakning">
+            
+            <!-- lager en ID jeg skal referere til i JS -->
+            <h1 id="overskrift">Hei Verden!</h1>
+            <br />
+            
+            <table>
+                <tr>
+                    <td>
+                        <p>Klikk på ønsket farge</p>
+                        <ul>
+                            <li id="gul">Gul</li>
+                            <li id="groenn">Grønn</li>
+                            <li id="blaa">Blå</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p>Klikk på ønsket funksjonalitet</p>
+                        <ul>
+                            <li id="bg">Bakgrunn</li>
+                            <li id="font1">Skrifttype</li>
+                            <li id="font2">Skriftstørrelse</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            
+            <p>
+                <img id="bilde" src="bilder/logo.jpg"/>
+            </p>
+            
+            <hr />
+            <br />
+            
+            <input type="text" id="txtNavn" placeholder="skriv navnet ditt" />
+            <br />
+            
+
+            <!--radioknapper: kan kun velge et alternativ fra listen-->
+            
+            <li id = kjoenn>
+            <input type="radio" name="gender" id=rbGen1 /> Mann
+            <br />
+            
+            <input type="radio" name="gender" id=rbGen2 /> Kvinne
+            <br />
+            
+            <input type="radio" name="gender" id=rbGen3 /> Privat
+            <br />
+            </li>
+            
+            <!--checkboxer: kan velge flere alternativ fra listen-->
+            <input type="checkbox" id="chkPasta" />Jeg liker pasta
+            <br />
+            
+            <input type="checkbox" id="chkPizza" />Jeg liker pizza
+            <br />
+            
+            <button id="btnHilsen">Klikk</button>
+            
+            <p id="melding"></p>
+
+        </div>    
+        <script>
+
+let gulSkrift = document.getElementById("gul");
+console.log(gulSkrift)
+
+gulSkrift.addEventListener("click", byttTilGul);
+
+function byttTilGul(){
+    gulSkrift.setAttribute("class", "gul");
+}
+//endring til groennSkrift
+
+let groennSkrift = document.getElementById("groenn");
+
+groennSkrift.addEventListener("click", byttTilGroenn);
+
+function byttTilGroenn(){
+
+    groennSkrift.setAttribute("class", "groenn");
+
+}
+
+//endring til blaaSkrift
+
+let blaaSkrift = document.getElementById("blaa");
+
+blaaSkrift.addEventListener("click", byttTilBlaa);
+
+function byttTilBlaa(){
+
+    blaaSkrift.setAttribute("class", "blaa");
+
+}
+
+let bakgrunn = document.getElementById("bg");
+
+bakgrunn.addEventListener("click", byttBakgrunn);
+
+function byttBakgrunn(){
+
+    bakgrunn.setAttribute("class", "bg");
+
+}
+
+let font = document.getElementById("font1");
+
+font.addEventListener("click", byttFont);
+
+function byttFont(){
+
+    font.setAttribute("class", "font1");
+
+}
+
+let skriftStørrelse = document.getElementById("font2");
+
+skriftStørrelse.addEventListener("click", byttStørrelse);
+
+function byttStørrelse(){
+
+    skriftStørrelse.setAttribute("class", "font2");
+
+}
+
+
+window.onload = oppstart;
+        //her kommer funksjonen ppstart so kjøres når siden lastes
+        function oppstart()
+        {
+            //starte en ny funksjon når bruker klikker på ID
+            //vi har lytteren noclick (museklikk) som aktverer funksjonen
+            document.getElementById("bilde").onclick = trykket;
+        }
+
+        function trykket()
+        {
+            //prompter en alertbox
+            alert("Du har klikket på bilde");
+        }
+
+        function spørreskjema()
+        {
+            document.getElementById("btnHilsen").onclick = hilsen;
+        }
+
+        function hilsen()
+        {
+            //henter verdier fra tekstfelt og legger den i variabler
+            var navn = document.getElementById("txtNavn").value;
+            var kjoenn = document.getElementById("kjoenn").value;
+
+            //henter verdi fra liste og legger den i en variabel
+
+            //console.log(navn);
+            //console.log(alder);
+            //console.log(spraak);
+
+            document.getElementById("melding").innerHTML = "Hei " + navn + " du er " + kjoenn + " år gammel og du har sikkert stor " + spraak 
+        }
+
+
+
+        console.log(kjoenn);
+
+
+        
+
+        </script>
+        <p id="melding"></p>
+    </body>
+</html>
+

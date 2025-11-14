@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stiler/stil.css" />
+    <title>Tegneprogram v1.2</title>
+</head>
+<body>
+    <canvas id="canPaint" width="500" height="500"></canvas>
+
+    <p>Firkant:</p>
+    Sett start X&Y:<br />
+    <input type="number" id="txtFirX" min="1" max="500" />
+    <input type="number" id="txtFirY" min="1" max="500" />
+    <p />
+    Sett B&H:<br />
+    <input type="number" id="txtFirB" min="1" max="500" />
+    <input type="number" id="txtFirH" min="1" max="500" />
+    <p />
+    Antall:<br />
+    <input type="number" id="txtFirA" min="1" max="20" />
+    <br />
+    <button id="btnSquare" onclick="tegnFirkant();">Tegn firkant</button>
+
+    <p>Sirkel:</p>
+    Sett start X&Y:<br />
+    <input type="number" id="txtSirX" min="1" max="500" />
+    <input type="number" id="txtSirY" min="1" max="500" />
+    <p />
+    Sett Radius:<br />
+    <input type="number" id="txtSirR" min="1" max="500" />
+    <p />
+    Antall:<br />
+    <input type="number" id="txtSirA" min="1" max="20" />
+    <br />
+    <button id="btnCircle" onclick="tegnSirkel();">Tegn sirkel</button>
+    <button id="btnGrid" onclick="tegnRutenett();">Tegn rutenett</button>
+    <script src="../script/1.3.js"></script>
+</body>
+</html>

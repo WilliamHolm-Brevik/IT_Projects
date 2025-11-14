@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS3: Riddle</title>
+    <script>
+        //deklarer en funksjon (oppstart), som kjører når siden lastes
+        window.onload = oppstart;
+        //her kommer funksjonen ppstart so kjøres når siden lastes
+        function oppstart()
+        {
+            //starte en ny funksjon når bruker klikker på ID
+            //vi har lytteren noclick (museklikk) som aktverer funksjonen
+            document.getElementById("svar").onclick = trykket;
+        }
+
+        function trykket()
+        {
+            //prompter en alertbox
+            document.getElementById("svar").innerHTML = "42"
+        }
+    </script>
+</head>
+<body>
+    <p>Hva er svaret på livet, universet og alt mulig?</p>
+    <p id="svar">Klikk her for å se svaret</p>
+</body>
+</html>

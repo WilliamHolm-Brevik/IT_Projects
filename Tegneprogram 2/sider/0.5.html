@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stiler/stil.css" />
+    <title>Tegneprogram v0.5</title>
+</head>
+<body>
+    <canvas id="canPaint" width="500" height="500"></canvas>
+    <p>
+        Ny farge:<input type="color" id="colFarge" oninput="farge();">
+        <button id="btnErase" onclick="viskUt();">Visk ut</button>
+        <button id="btnDelete" onclick="slett();">Slett alt</button>
+        Ny tykkelse:<input type="range" min="1" max="30" value="3" id="rngTykkelse" onchange="strekTykk();">
+        <input type="number" id="txtTykk" readonly />
+    </p>
+    <script src="../script/0.5.js"></script>
+</body>
+</html>

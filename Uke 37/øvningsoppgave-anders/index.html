@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stiler/stil.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Kanye West</title>
+    <style>
+        body{
+            font-family: 'Kaushan Script', cursive;
+        }
+    </style>
+    <script>
+        //programnet kjøres når siden lastes
+        window.onload = oppstart;
+
+        function oppstart()
+        {
+            //lager lyttere til radioknapper 
+            //når vi kjører skal vi starte ebn ny funksjon
+            document.getElementById("rbBilde1").onclick = visBilde1;
+            document.getElementById("rbBilde2").onclick = visBilde2;
+            document.getElementById("rbBilde3").onclick = visBilde3;
+            document.getElementById("rbBilde4").onclick = visBilde4;
+
+            document.getElementById("bilde").src = document. getElementById("rbBilde1").value;
+            document.getElementById("rbBilde1").checked = true;
+        }
+
+        function visBilde1()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde1").value; 
+        }
+
+        function visBilde2()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde2").value; 
+        }
+
+        function visBilde3()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde3").value; 
+        }
+        function visBilde4()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde4").value; 
+        }
+    </script>
+</head>
+<body>
+
+<style>
+    body {
+      background-image: url('bilder/kanyewest5.jpg');
+    }
+    </style>
+
+    <div id="innpakning">
+        <center>
+        <div id="topptekst">
+            Kanye west
+        </div>
+        </center>
+        <div id="meny">
+            <ul>
+                <li><a href="#">Startside</a></li>
+                <li><a href="sider/side2.html">Bakgrunnsinformasjon</a></li>
+                <li><a href="sider/side3.html">Relevante linker</a></li>
+            </ul>
+        </div>
+        <div id="innhold">
+            <p>
+                <audio controls>
+                    <source src="lyd/lyd1.wav"
+                </audio>
+                 <p><img src="#" id="bilde" /></p>
+                 <p><input type="radio" name="bildeliste" id="rbBilde1" value="bilder/kanyewest1.jpg">Kanye dinsoaur</p>
+                 <p><input type="radio" name="bildeliste" id="rbBilde2" value="bilder/kanyewest2.jpg">Kanye sølvmann</p>
+                 <p><input type="radio" name="bildeliste" id="rbBilde3" value="bilder/kanyewest3.jpg">Kanye kul</p>
+                 <p><input type="radio" name="bildeliste" id="rbBilde4" value="bilder/kanyewest4.jpg">Kanye gudlig</p>
+            </p>
+        </div>
+    </div>
+      </div>
+    <canvas id="tv-screen"></canvas>
+    <script src="js/app.js"></script>
+<script>
+    let speed = 20;
+let scale = 0.17; // Image scale (I work on 1080p monitor)
+let canvas;
+let ctx;
+let logoColor;
+
+let dvd = {
+    x: 200,
+    y: 300,
+    xspeed: 10,
+    yspeed: 10,
+    img: new Image()
+};
+
+(function main(){
+    canvas = document.getElementById("tv-screen");
+    ctx = canvas.getContext("2d");
+    dvd.img.src = 'bilder/kanyewest.png';
+
+    //Draw the "tv screen"
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    pickColor();
+    update();
+})();
+
+function update() {
+    setTimeout(() => {
+        //Draw the canvas background
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        //Draw DVD Logo and his background
+        ctx.fillStyle = logoColor;
+        ctx.fillRect(dvd.x, dvd.y, dvd.img.width*scale, dvd.img.height*scale);
+        ctx.drawImage(dvd.img, dvd.x, dvd.y, dvd.img.width*scale, dvd.img.height*scale);
+        //Move the logo
+        dvd.x+=dvd.xspeed;
+        dvd.y+=dvd.yspeed;
+        //Check for collision 
+        checkHitBox();
+        update();   
+    }, speed)
+}
+
+//Check for border collision
+function checkHitBox(){
+    if(dvd.x+dvd.img.width*scale >= canvas.width || dvd.x <= 0){
+        dvd.xspeed *= -1;
+        pickColor();
+    }
+        
+    if(dvd.y+dvd.img.height*scale >= canvas.height || dvd.y <= 0){
+        dvd.yspeed *= -1;
+        pickColor();
+    }    
+}
+
+//Pick a random color in RGB format
+function pickColor(){
+    r = Math.random() * (254 - 0) + 0;
+    g = Math.random() * (254 - 0) + 0;
+    b = Math.random() * (254 - 0) + 0;
+
+    logoColor = 'rgb('+r+','+g+', '+b+')';
+}
+</script>
+</body>
+</html>

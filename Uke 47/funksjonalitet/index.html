@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stiler/stil.css" />
+    <title>Funksjonalitet</title>
+</head>
+<body>
+    <div id="container">
+        <p>[ <a href="#">Lightmode</a> | <a href="sider/index2.html"> Darkmode</a> ]</p>
+        <select id="selBiler" onchange="velgBil();"></select>
+        <p id="utskrift"></p>
+        <hr />
+        <input type="text" id="txtMail" value="williamhb@viken.no"> <br/>
+        <textarea id="txtMessage" rows="5" cols="40"></textarea> <br/>
+        <button id="btnMail" onclick="mail();">Send mail</button> 
+        <script src="script/script.js"></script>
+    </div>
+</body>
+</html>

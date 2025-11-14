@@ -1,0 +1,55 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+a:link{
+    color: #0000FF;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #0000FF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF0000;
+    text-decoration: none;
+}
+
+/*listeelementer til ol*/
+ol li{
+    background-color: #8cbe05;
+    padding: 5px; /*luft rundt teksten */
+    margin: 2px; /*avstand mellom boksene */
+    width: 200px; /*bredde på boksene*/
+}
+
+/*listeelementer til ul*/
+ul li{
+    background-color: #f04605;
+    padding: 5px; /*luft rundt teksten */
+    margin: 2px; /*avstand mellom boksene */
+    width: 200px; /*bredde på boksene*/
+    border-radius: 5px; /*avrundede kanter*/
+    list-style-type: none; /*fjerner kulepunkter*/
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #8cbe05;
+    padding: SPx;
+    Border: 1px solid #000000;
+
+}
+
+td{
+    backround-color: #e7f1cc;
+    padding Spx;
+    border: 1px solid #000000;
+
+}

@@ -1,0 +1,49 @@
+body{
+    background-color: #e0e0e0;
+}
+
+#innpakning{
+    position: relative;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    border: solid 1px
+}
+
+img{
+    width: 25%;
+}
+/*endrer farge på overskrift */
+#overskrift{
+    color: #FF0000;
+}
+
+/*endrer farge på tekst */
+.gul{
+    color: #FFFF00;
+}
+
+.groenn{
+    color: #00FF00;
+}
+
+.blaa{
+    color: #0000FF;
+}
+
+/*endre utseende på tekst */
+.bg{
+    background-color: #e9967a;
+}
+
+.font1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font2{
+    font-size: 16pt;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildegalleri</title>
+    <script>
+        //programnet kjøres når siden lastes
+        window.onload = oppstart;
+
+        function oppstart()
+        {
+            //lager lyttere til radioknapper 
+            //når vi kjører skal vi starte ebn ny funksjon
+            document.getElementById("rbBilde1").onclick = visBilde1;
+            document.getElementById("rbBilde2").onclick = visBilde2;
+            document.getElementById("rbBilde3").onclick = visBilde3;
+
+            document.getElementById("bilde").src = document. getElementById("rbBilde1").value;
+            document.getElementById("rbBilde1").checked = true;
+        }
+
+        function visBilde1()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde1").value; 
+        }
+
+        function visBilde2()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde2").value; 
+        }
+
+        function visBilde3()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde3").value; 
+        }
+    </script>
+</head>
+<body>
+    <!---- lagger en tom id hvor jeg skal legge inn bildelink -->
+    <p><img src="#" id="bilde" /></p>
+    <!-- setter opp 3 radio knapper som har likt navn (serien), MWn ukike IDer > value til knapp (bildelink)-->
+    <p><input type="radio" name="bildeliste" id="rbBilde1" value="bilder/lion.jpg">Løve</p>
+    <p><input type="radio" name="bildeliste" id="rbBilde2" value="bilder/tiger.jpg">Tiger</p>
+    <p><input type="radio" name="bildeliste" id="rbBilde3" value="bilder/jaguar.jpg">Jaguar</p>
+</body>
+</html>

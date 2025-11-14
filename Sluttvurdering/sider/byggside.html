@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stiler/stil2.css" media="screen">
+    <title>Bygg din PC!</title>
+</head>
+<body>
+  <div id="overdel">
+    <!-- header -->
+    <br><br><br>
+    <div class="header_section">
+        <div class="mobile_menu">
+          <p href="../index.html" id="bakbilde"><img id="bakgrunnbilde" src="../bilder/pexels-xxss-is-back-777001 (1).jpg"></p>
+          <center> <img id="logo1" src="../bilder/logo.png">
+            <nav class="navbar">
+              <ul class="navbar-nav">
+                <div class="nav-item">
+                    <a class="nav-link" href="../index.html">STARTSIDE</a>
+                  </div>
+                <div class="nav-item">
+                  <a class="nav-link" href="#">BYGG PC</a>
+                </div>
+                <div class="nav-item">
+                  <a class="nav-link" href="kontaktside.html">KONTAKT</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="kalkulator.html">KALKULATOR</a>
+                </div>
+              </ul>
+            </div>
+          </nav></center>
+        </div> <br><br><br><br><br>
+      </div>
+    </div>
+  <!--Hoveddel-->
+  <div id="navbar2"></div>
+  <div id="hoveddel">
+    <br><br><br><br><br><br>
+    <center>
+    <div id="hovedtekst">
+       <button onclick="vis1()" class="button1">Bygg din egen PC</button> 
+    <button onclick="vis2()" id="btn2" class="button1">Kjøp en ferdigstillt PC</button>
+      <p id="overskrift">Velkommen!</p>
+      <p id="brødtekst">Vi i ByggPC gir deg flere muligheter for å kunne bygge din egen PC 
+        <br> Vi gir deg informasjon om å lage den beste PC´n for din bruk! <br> <br> Kilder hentet fra:           <div>Kilder: <br> <a target="_blank" href="https://www.tek.no/nyheter/guide/i/wPbVm1/grunnleggende-begrepsguide">Tek.no: Grunnleggende begrepsguide</a></div><br>  <div> <a target="_blank" href="https://komputer.no/pc-utstyr/hva-er-ram">Computer for alle</a><br> <br><a target="_blank" href="https://komputer.no/pc-utstyr/hva-er-ram">SNL</a></div></p>
+        <p>The saved data is: <span id="minData"></span></p>
+
+        <!--Gjemte div-->
+
+        <!--Bygg din egen PC-->
+        <div id="egenPC" style="display: none;">
+            <div class="row1">
+              <div class="column">
+                <div class="box">Hovedkort</div>
+                <div class="box2"><div id="bildediv1"></div></div>
+                <div class="box3"><select id="selKomponent1" onchange="byggKomponent(1)"></select><br>Pris: <div id="pris1"></div><div id="forklaring"> <div id="infotekst">En prosessor kan man se på <br> som selve hjernen i datamaskinen. <br> Prosessorens oppgave er å utføre alle instruksjoner som operativsystemet og <br> forskjellige programmer ønsker å utføre.</div></div>
+              </div>
+              <div class="column">
+                <div class="box">Prosessor</div>
+                <div class="box2"><div id="bildediv2"></div></div>
+                <div class="box3"><select id="selKomponent2" onchange="byggKomponent(2)"></select><br>Pris:<div id="pris2"></div><div id="forklaring"><div id="infotekst">Hovedfunksjonen til et hovedkort er først og fremst å binde forskjellige komponenter sammen slik at de blir i stand til å kommunisere. Prosessorens (CPU) oppgave er å gjennomføre regneoperasjoner, og disse operasjonene er som <br>regel lagret i internminnet (RAM). Hovedkortets oppgave blir i dette tilfelle å sørge for at CPU og RAM kan snakke med hverandre.</div></div></div>
+              </div>
+              <div class="column">
+                <div class="box">RAM</div>
+                <div class="box2"> <div id="bildediv3"></div></div>
+                <div class="box3"><select id="selKomponent3" onchange="byggKomponent(3)"></select><br>Pris:<div id="pris3"></div><div id="forklaring"></div> <div id="infotekst">RAM er korttids- eller arbeidsminnet i pc-en. Når du bruker et program, henter pc-en data fra harddisken og lagrer det midlertidig i minnet.
+
+                  Når du slår av pc-en, blir innholdet i RAM-minnet slettet.
+                  
+                  Hastigheten på RAM-minnet er avgjørende for hvor raskt en pc kan behandle data. Derfor er det viktig at du velger riktig type RAM.</div>
+              </div>
+            </div>
+            <div class="row1">
+              <div class="column">
+                <div class="box">Grafikkort</div>
+                <div class="box2"><div id="bildediv4"></div></div>
+                <div class="box3"><select id="selKomponent4" onchange="byggKomponent(4)"></select><br>Pris:<div id="pris4"></div><div id="forklaring"></div><div id="infotekst">Et grafikkort er en type skjermadapter eller skjermkort installert i de fleste dataenheter for å vise grafiske data med høy klarhet, farge, definisjon og generelt utseende. Et grafikkort gir visuell skjerm av høy kvalitet ved å behandle og utføre grafiske data ved bruk av avanserte grafiske teknikker, funksjoner og funksjoner.</div>
+              </div>
+              <div class="column">
+                <div class="box">Harddisk</div>
+                <div class="box2"> <div id="bildediv5"></div></div>
+                <div class="box3"><select id="selKomponent5" onchange="byggKomponent(5)"></select><br>Pris:<div id="pris5"></div><div id="forklaring"></div><div id="infotekst">En harddisk er et magnetisk lagringsmedium hvor data lagres på magnetiske plater som spinner rundt. Som vi ser på bildet over består en harddisk av en eller flere plater som er plassert over hverandre hvor data lagres. Data leses og skrives av flere lese- og skrivehoder som sitter ytterst på en mekanisk arm som kan beveges frem og tilbake over platen.</div>
+              </div>
+              <div class="column">
+                <div class="box">Strømforsyning</div>
+                <div class="box2"><div id="bildediv6"></div></div>
+                <div class="box3"><select id="selKomponent6" onchange="byggKomponent(6)"></select><br>Pris:<div id="pris6"></div><div id="forklaring"></div><div id="infotekst">Strømforsyningen (PSU, Power Supply Unit) er en sentral del av alle datamaskiner og gir maskinen strøm med riktig(e) spenning(er). Stasjonære datamaskiner bruker interne strømforsyninger som på bildet over. Bærbare datamaskiner og små arbeidsstasjoner har som oftest eksterne strømforsyninger for å spare plass.</div>
+              </div>
+            </div>
+            <div class="row1">
+              <div class="column">
+                <div class="box">Nettverkskort</div>
+                <div class="box2"> <div id="bildediv7"></div></div>
+                <div class="box3"><select id="selKomponent7" onchange="byggKomponent(7)"></select><br>Pris:<div id="pris7"></div><div id="forklaring"></div><div id="infotekst">Nettverkskort, innstikkskort til PC eller server for å kople datamaskinen til et datanettverk. De fleste stasjonære datamaskiner har en buss med et antall kontakter for tilkopling av funksjonsmoduler som gir brukeren muligheter for å bygge ut maskinen etter behov.</div>
+              </div>
+              <div class="column">
+                <div class="box">Vifte</div>
+                <div class="box2"> <div id="bildediv8"></div></div>
+                <div class="box3"><select id="selKomponent8" onchange="byggKomponent(8)"></select><br>Pris:<div id="pris8"></div><div id="forklaring"></div><div id="infotekst">En vifte til en PC er en enhet som brukes til å kjøle ned komponentene i datamaskinen ved å sirkulere luft gjennom kabinettet.</div>
+              </div>
+              <div class="column">
+                <div class="box">Kabinett</div>
+                <div class="box2"> <div id="bildediv9"></div></div>
+                <div class="box3"><select id="selKomponent9" onchange="byggKomponent(9)"></select><br>Pris:<div id="pris9"></div><div id="forklaring"></div><div id="infotekst">Et kabinett til en PC er en beskyttende boks eller beholder som huser alle de interne komponentene i en datamaskin. Kabinettet er vanligvis laget av metall eller plast og har et antall åpninger for å gi tilgang til forskjellige porter, som USB og Ethernet.</div>
+              </div>
+            </div>
+            <div class="row1">
+              <div class="column">
+                <div class="box">Skjerm</div>
+                <div class="box2"> <div id="bildediv10"></div></div>
+                <div class="box3"><select id="selKomponent10" onchange="byggKomponent(10)"></select><br>Pris:<div id="pris10"></div><div id="forklaring"><div id="infotekst">En skjerm til en PC er en enhet som brukes til å vise visuelle utdata fra en datamaskin. Den består vanligvis av en skjermflate og et kabinett som inneholder elektronikk og tilkoblingsporter.
+
+                  Skjermen mottar informasjon fra datamaskinen via en kabel eller trådløs forbindelse</div></div>
+              </div>
+              <div class="column">
+                <div class="box">Mus</div>
+                <div class="box2"> <div id="bildediv11"></div></div>
+                <div class="box3"><select id="selKomponent11" onchange="byggKomponent(11)"></select><br>Pris:<div id="pris11"></div><div id="forklaring"><div id="infotekst">En mus til en PC er en enhet som brukes til å navigere på datamaskinens skjerm og utføre handlinger som å velge, dra og slippe elementer på skjermen. Musen består vanligvis av en plast- eller metallkropp som inneholder elektronikk og to eller flere knapper på oversiden, samt en eller flere bevegelsessensorer på undersiden som lar brukeren bevege musen på en flat overflate.</div></div>
+              </div>
+              <div class="column">
+                <div class="box">Tastatur</div>
+                <div class="box2"> <div id="bildediv12"></div></div>
+                <div class="box3"><select id="selKomponent12" onchange="byggKomponent(12)"></select><br>Pris:<div id="pris12"></div><div id="forklaring"><div id="infotekst">Et tastatur er en enhet som brukes til å skrive inn tekst, tall og symboler på en datamaskin eller andre enheter.</div></div>
+              </div>
+            </div>
+              <div id="storskirft">Total pris</div> <br> Uten moms: <div id="totalpris1"></div> <br> Med moms: <div id="totalpris2"></div>
+              <button class="button1" onclick="bestillPC()">Bestill PC</button>
+          </div>
+        </div></div></div></div></div></div></div></div></div></div></div>
+        <!--Kjøp ferdigstillt-->
+        <div id="ferdigstillt" style="display: none;">            
+          <div class="row1">
+            <div class="column">
+              <div class="box">Design PC</div>
+              <div class="box2"><div><img id="bilde1" src="../bilder/bilde25.avif"></div></div>
+              <div class="box3"><input type="radio" name="product1" id="btnRadioKnapp1"><br> Pris u.moms: 20 481 kr <br> Pris.m.moms: 25601.25<div id="pris12"></div><div id="forklaring"></div></div>
+            </div>
+            <div class="column">
+              <div class="box">Gaming PC</div>
+              <div class="box2"><div><img id="bilde1" src="../bilder/bilde37.jpg"></div></div>
+              <div class="box3"><input type="radio" name="product1" id="btnRadioKnapp2"><br>  Original Pris: 25 720 <br> Pris u.moms: 18 004 <br> Pris.m.moms: 22505 <br><div id="forklaring"></div></div>
+            </div>
+            <div class="column">
+              <div class="box">Workstation PC</div>
+              <div class="box2"><div><img id="bilde1" src="../bilder/bilde27.avif"></div></div>
+              <div class="box3"><input type="radio" name="product1" id="btnRadioKnapp3"><br> Pris u.moms: 14 572 <br> Pris.m.moms: 18 251<div id="pris12"></div><div id="forklaring"></div></div>
+            </div>
+        </div>
+        <div class="row1">
+          <div class="column">
+            <div class="box">Skjerm</div>
+            <div class="box2"> <div id="bildediv13"></div></div>
+            <div class="box3"><select id="selKomponent13" onchange="byggKomponent(13)"></select><br>Pris:<div id="pris13"></div><div id="forklaring"></div></div>
+          </div>
+          <div class="column">
+            <div class="box">Mus</div>
+            <div class="box2"> <div id="bildediv14"></div></div>
+            <div class="box3"><select id="selKomponent14" onchange="byggKomponent(14)"></select><br>Pris:<div id="pris14"></div><div id="forklaring"></div></div>
+          </div>
+          <div class="column">
+            <div class="box">Tastatur</div>
+            <div class="box2"> <div id="bildediv15"></div></div>
+            <div class="box3"><select id="selKomponent15" onchange="byggKomponent(15)"></select><br>Pris:<div id="pris15"></div><div id="forklaring"></div></div>
+          </div>
+        </div>          <button class="button1" onclick="bestillFerdig()">Bestill PC</button>
+      </center>
+
+        <script src="../script/script-bygg1.js"></script>
+    </div>
+  </div>
+</body>
+</html>

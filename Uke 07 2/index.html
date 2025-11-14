@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stil/stil.css"/>
+    <title>Random Liga</title>
+</head>
+<body>
+    <!--Lager div for selecten og button-->
+    <div id="velgAntall">
+        Velg antall spillere i ligaen:
+        <select id="selSpillere"></select> 
+        </div>
+        <br> <br>
+        <button id="btnStart" onclick="start()" class="button">Start ligaen</button>
+    </div>
+    <br>
+    <br>
+    <!--Lager row og column for side, i hver column blir tabellene plasssert-->
+    <div class="row">
+        <div id="utskrift0" class="column"></div>
+        <div id="utskrift1" class="column"></div>
+        <div id="utskrift2" class="column"></div>
+        <div id="utskrift3" class="column"></div>
+        <div id="utskrift4" class="column"></div>
+        <div id="utskrift5" class="column"></div>
+        <div id="utskrift6" class="column"></div>
+        <!--Lager en egen column for highscore, her skal alle highscorene plasseres-->
+        <div id="highScore" class="column2"></div>
+    </div>
+    <script src="script/script1.js"></script>
+</body>
+</html>

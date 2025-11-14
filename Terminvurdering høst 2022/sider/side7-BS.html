@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../stiler/stil4.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <title>Bestille?</title>
+</head>
+<body>
+    <img id="hvit" src="../bilder/hvit.png">
+    <div id="wrapper">
+        <center>
+        <div class="topnav">
+            <div id="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+    
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="side2-HS.html">Hovedside</a><br />
+                    <a href="side3-BG.html">Bildegalleri</a><br />
+                    <a href="side4-LS.html">Linker</a><br />
+                    <a href="side5-KS.html">Kontaktside</a><br />
+                    <a href="side6-H.html">Historie</a><br />
+                    <a href="#">Aktiviteter</a>
+                </div>
+            </div>
+          </div>
+        <center/>
+    </div>
+    <div>
+        <img alt="Logo til nettside" src="../bilder/logo.png" id="logo">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="hoved">
+        <div id="topptekst" >
+        </div>
+        <div id="innhold">
+            <div id="reg">
+                <h1>Bestill Aktivitet?</h1>
+                Navn:<br />
+                <input type="text" id="txtName" placeholder=""skriv inn fult navn" /><br />
+                Epost:<br />
+                <input type="text" id="txtEmail" placeholder=""skriv inn epost adresse" /><br />
+                Ønsket aktivitet<br />
+                <select id="selAktivitet1"></select><br />
+                Ønsket Tidspunkt<br />
+                <input type="date" id="datDato" /><br />
+                <input type="time" id="timTid" /> <br> <br>
+
+
+
+                Bli med i spørreundersøkelse<input type="checkbox" id="chbNews" />
+                <p />
+                <button id="btnReg" onclick="reg();">Bestill</button> <br><br>
+
+                <p class="kvittering" id="kvittering">Kvittering:</p> <br>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <script src="../script/script4.js"></script>
+</body>

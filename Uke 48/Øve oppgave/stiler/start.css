@@ -1,0 +1,69 @@
+body{
+    font-family: 'Raubik Glitch', sans-serif;
+    background-color: #999999;
+}
+
+#main{
+    background-image: url("../bilder/bck.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 1024px;
+    height: 768px;
+    border: 2px solid #FFF;
+    padding: 5px;
+}
+
+/*overskrift*/
+#txt1{
+    font-size: 52px;
+    color: #FFF;
+}
+
+#txt2{
+    font-size: 52px;
+    color: #FF0000;
+}
+
+/*roterende boks rundt*/
+@keyframes tipsy{
+   0%{
+    transform: translateX(-50%) translateY(-50%) rotate(0deg)
+   }
+   100%{
+    transform: translateX(-50%) translateY(-50%) rotate(360deg)
+   }
+}
+
+a{
+    font-size: 80px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*legger animasjon på linker */
+a:before, a:after{
+    content: "";
+    padding: 45px 15px; /*luft rundt linken inn boks*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    display: block;
+    border: 15px solid;
+    border-color: #D9524A;
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    box-shadow: 25px 25px 25px rgba(31, 31, 32, 0.8);
+    animation: 10s infinite alternate ease-in-out tipsy;
+
+
+}

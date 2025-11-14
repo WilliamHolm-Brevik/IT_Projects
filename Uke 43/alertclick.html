@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="NB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2: CLICK & ALERT</title>
+    <script>
+        //deklarer en funksjon (oppstart), som kjører når siden lastes
+        window.onload = oppstart;
+        //her kommer funksjonen ppstart so kjøres når siden lastes
+        function oppstart()
+        {
+            //starte en ny funksjon når bruker klikker på ID
+            //vi har lytteren noclick (museklikk) som aktverer funksjonen
+            document.getElementById("test").onclick = trykket;
+        }
+
+        function trykket()
+        {
+            //prompter en alertbox
+            alert("AUUUUUUUUUUUUUUUU!!!!!! IKKE TA PÅ MEG DER");
+        }
+    </script>
+</head>
+<body>
+    <!-- Lager en ID til <p> for å referere til den i JS--> 
+    <p id="test" >Klikk her</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS4: Value & Select</title>
+    <script>
+        window.onload = oppstart;
+
+        function oppstart()
+        {
+            document.getElementById("btnHilsen").onclick = hilsen;
+        }
+
+        function hilsen()
+        {
+            //henter verdier fra tekstfelt og legger den i variabler
+            var navn = document.getElementById("txtNavn").value;
+            var alder = document.getElementById("txtAlder").value;
+
+            //henter verdi fra liste og legger den i en variabel
+            var spraak = document.getElementById("selLand").value;
+
+            //console.log(navn);
+            //console.log(alder);
+            //console.log(spraak);
+
+            document.getElementById("melding").innerHTML = "Hei " + navn + " du er " + alder + " år gammel og du har sikkert stor " + spraak 
+        }
+    </script>
+</head>
+<body>
+    
+    <!--to ulike inputbokser soms kal ta imot to ulike verdier-->
+    <input type="text" id="txtNavn" placeholder="ditt navn" />
+    <br />
+    <input type="number" id="txtAlder" placeholder="din alder" />
+    <br />
+    <!--liste med ulike valgmuligheter, det er value vis skal hente i koden-->
+    <select id="selLand">
+        <option value="Norsk">Norge</option>
+        <option value="mus">Sverige</option>
+        <option value="Dansk">Danamark</option>
+        <option value="Finsk">Finland</option>
+    </select>
+    <!-- Knapp som jeg skal linke en klikk-lytter til-->
+    <button id="btnHilsen">Vis hilsen</button>
+    <hr />
+    <p id="melding"></p>
+</body>
+</html>

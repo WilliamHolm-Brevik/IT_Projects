@@ -1,0 +1,9 @@
+/*lager grafer (elementer) som skal få bredde etter fårekomst i array*/
+
+span.graf{
+    background-color: #0022ff;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+
+}

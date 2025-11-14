@@ -1,0 +1,207 @@
+body{
+    background-image: url('../bilder/fredrikstadboen.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+
+
+#wrapper{
+    font-size: 11px;
+    display: flex; /* gjør den om til en flexbox */
+    flex-direction: row; /*legger boksene vannrett ikke leddrett*/
+    flex-wrap: wrap; /*plasserer elementer vannrett og på ny linje under om bredden er full*/
+    width: 100%;
+    top: -100px;
+    height: 25px;
+    margin: auto; /*sentrerer innhold*/
+}
+
+a {
+    border-bottom: 1px solid #FF0000;
+    padding-bottom: 5px;
+    }
+
+div {
+    background-color: #FFFFFF;
+
+}
+
+#tabell1 {
+    left: 400px;
+}
+
+th, td {
+    padding: 15px;
+    font-size: 19px;
+}
+
+#innhold {
+    font-size: 30px;;
+}
+
+#innhold2{
+    font-size: 20px;;
+}
+
+
+
+#hoved {
+    width: 850px;
+    padding: 20px;;
+    margin: auto;
+}
+
+#hvit {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 105vw !important;
+    margin-left: calc(-50vw + 50%);
+    height: 70px;
+    z-index: -2;
+}
+
+#logo {
+    position: absolute;
+    top: 0.5%;
+    left: 70%;
+    width: 105px;
+    height: 50px;
+}
+
+.topnav {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    width: 500px;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #FF4122;
+    color: white;
+    float: left
+  }
+
+
+/*hamburgermeny*/
+#container{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+}
+
+/*strekene i menyen*/
+.bar1, .bar2, .bar3{
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/*roterer øverste strek*/
+.change .bar1{
+    transform: rotate(-45deg) translate(-6px, 3px);
+}
+
+/*fjerner midterste strek*/
+.change .bar2{
+    opacity: 0;
+}
+
+/*roterer nederste strek*/
+.change .bar3{
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+/*skjuler linker ved oppstart*/
+.dropdown-content{
+    display: none;
+
+}
+
+/*linker*/
+a:link{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF0000;
+    text-decoration: none;
+}
+
+#reg{
+    max-width: 400px;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    padding: 15px;
+    background-color: #f04d4d;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button{
+    margin-top: 10px;
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.kvittering{
+    display: none;
+}

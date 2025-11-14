@@ -1,0 +1,72 @@
+#canPaint{
+    border-style: solid;
+}
+
+/*Til versjon 0.2*/
+#divRed{
+    background-color: #FF0000;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+#divGreen{
+    background-color: #00FF00;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+#divBlue{
+    background-color: #0000FF;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+#divYellow{
+    background-color: #FFFF00;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+#divPurple{
+    background-color: #9933FF;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+#divGray{
+    background-color: #999999;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+#divPink{
+    background-color: #FF00FF;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+#divBlack{
+    background-color: #000000;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+/* til versjon 0.5 */
+#txtTykk{
+    width: 40px;
+}

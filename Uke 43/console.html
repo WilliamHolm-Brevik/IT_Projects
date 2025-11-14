@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1: console</title>
+</head>
+<body>
+    <script>
+        //deklarer en funksjon (oppstart), som kjører når siden lastes
+        window.onload = oppstart;
+        //her kommer funksjonen ppstart so kjøres når siden lastes
+        function oppstart()
+        {
+            //skriver tekst ut i consolen 
+            console.log("Hællæ verden");
+
+            //lage en variabel
+
+            var tall = 3;
+
+            console.log(tall);
+
+            var tall2 = 5;
+
+            console.log(tall + tall2);
+            console.log(tall - tall2);
+            console.log(tall * tall2);
+            console.log(tall / tall2);
+
+            //kombinerer streng med tall
+
+            var info = "Gutta har ";
+
+            var tall3 = "1000"
+
+            var info2 = " gram krutt i balla.";
+
+            console.log(info + tall3 + info2);
+
+
+
+        }
+    </script>
+</body>
+</html>

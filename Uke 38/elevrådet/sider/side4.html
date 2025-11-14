@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../stiler/stil.css"/>
+    <title>Elevrådet</title>
+    <script>
+        //programnet kjøres når siden lastes
+        window.onload = oppstart;
+
+        function oppstart()
+        {
+            //lager lyttere til radioknapper 
+            //når vi kjører skal vi starte ebn ny funksjon
+            document.getElementById("rbBilde1").onclick = visBilde1;
+            document.getElementById("rbBilde2").onclick = visBilde2;
+            document.getElementById("rbBilde3").onclick = visBilde3;
+            document.getElementById("rbBilde4").onclick = visBilde4;
+            document.getElementById("rbBilde5").onclick = visBilde5;
+            document.getElementById("rbBilde6").onclick = visBilde6;
+            document.getElementById("rbBilde7").onclick = visBilde7;
+            document.getElementById("rbBilde8").onclick = visBilde8;
+            document.getElementById("rbBilde9").onclick = visBilde9;
+
+            document.getElementById("bilde").src = document. getElementById("rbBilde1").value;
+            document.getElementById("rbBilde1").checked = true;
+        }
+
+        function visBilde1()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde1").value; 
+        }
+
+        function visBilde2()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde2").value; 
+        }
+
+        function visBilde3()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde3").value; 
+        }
+
+        function visBilde4()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde4").value; 
+        }
+
+        function visBilde5()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde5").value; 
+        }
+
+        function visBilde6()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde6").value; 
+        }
+
+        function visBilde7()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde7").value; 
+        }
+
+        function visBilde8()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde8").value; 
+        }
+
+        function visBilde9()
+        {
+            //setter bildelink lik value til valgt knapp radiobutton
+            document.getElementById("bilde").src = document.getElementById("rbBilde9").value; 
+        }
+    </script>
+</head>
+<body>
+<img id="hvit" src="../bilder/hvit.jpg">
+<br>
+    <div id="wrapper">
+        <header>
+            <a href="../index.html">
+                <img alt="Elevrådet startside" id="dnb" src="../bilder/elevradet.jpg">
+                </a>
+        </header>
+        <main style="font-family:verdana">
+            <center>
+                <a href="side2.html" style="font-family:verdana">OM ELEVRÅDET</a>
+        </center>
+    </main>
+        <main style="font-family:verdana">
+            <center>
+                <a href="side3.html" style="font-family:verdana">OM SKOLEN</a>
+            </center>
+        </main>
+        <main style="font-family:verdana">
+            <center>
+                <a href="#" style="font-family:verdana">BILDEGALLERI</a>
+            </center>
+        </main>
+        <main style="font-family:verdana">
+            <center>
+                <a href="side5.html" style="font-family:verdana">NYHETER</a>
+            </center>
+        </main>
+    </div>
+    <br>
+    <br>
+    <div id="mf">
+        <div id="topptekst" style="font-family:verdana">
+            Bildegalleri
+        </div>
+        <div id="innhold" style="font-family:verdana">
+                <!---- lagger en tom id hvor jeg skal legge inn bildelink -->
+         <p><img src="#" id="bilde" /></p>
+         <!-- setter opp 9 radio knapper som har likt navn (serien), MWn ukike IDer > value til knapp (bildelink)-->
+         <p><input type="radio" name="bildeliste" id="rbBilde1" value="../bilder/bilde1.jpg">Klemming</p>
+         <p><input type="radio" name="bildeliste" id="rbBilde2" value="../bilder/bilde2.jpg">Langbord med mat</p>
+         <p><input type="radio" name="bildeliste" id="rbBilde3" value="../bilder/bilde3.jpg">Greåker med sol</p>
+         <p><input type="radio" name="bildeliste" id="rbBilde4" value="../bilder/bilde4.jpg">Kule elever med kake</p>
+         <p><input type="radio" name="bildeliste" id="rbBilde5" value="../bilder/bilde5.jpg">Bok-elever</p>
+         <p><input type="radio" name="bildeliste" id="rbBilde6" value="../bilder/bilde6.jpg">Geir?!</p>
+         <p><input type="radio" name="bildeliste" id="rbBilde7" value="../bilder/bilde7.jpg">Velkommen!</p>
+         <p><input type="radio" name="bildeliste" id="rbBilde8" value="../bilder/bilde8.jpg">Marshmellow tårn</p>
+         <p><input type="radio" name="bildeliste" id="rbBilde9" value="../bilder/bilde9.jpg">Ballong-elever</p>
+        </div>
+    </div>
+    <br>
+    Alle Bilder tatt av John Doe, Greåker Videregående skole
+</body>
+</html>

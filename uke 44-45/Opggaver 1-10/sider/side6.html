@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stiler/stil.css" />
+    <title>Oppgave 6</title>
+</head>
+<body>
+    <div id="innpakning">
+        <div id="topptekst">
+            Oppgave 6
+        </div>
+        <div id="meny">
+            <ul>
+                <li><a href="../index.html">Side 1</a></li>
+                <li><a href="side2.html">Side 2</a></li>
+                <li><a href="side3.html">Side 3</a></li>
+                <li><a href="side4.html">Side 4</a></li>
+                <li><a href="side5.html">Side 5</a></li>
+                <li><a href="#" id="active">Side 6</a></li>
+                <li><a href="side7.html">Side 7</a></li>
+                <li><a href="side8.html">Side 8</a></li>
+                <li><a href="side9.html">Side 9</a></li>
+                <li><a href="side10.html">Side 10</a></li>
+            </ul>
+        </div>
+        <div id="innhold">
+            <p>Finn valutakurs</p>
+            <p>
+                Skriv inn beløp i NOK: <input type="number" id="txtSum" value="0"/>
+                <select id="selValuta">
+                    <!-- skriver in valutakurs mot 1 NOK-->
+                    <option value="0.091">US Dollar</option>
+                    <option value="0.093">Euro</option>
+                    <option value="0.082">Br Pund</option>
+                    <option value="1.062">Se Kroner</option>
+
+                </select>
+                <button id="btnKurs" onclick="nySum()">Regn ut</button>
+            </p>
+            <p>
+                <input type="number" id="txtNySum" readonly/>
+            </p>
+        </div>
+    </div>
+    <!-- Kjører javascriptfil-->
+    <script src="../script/script6.js"></script>
+</body>
+</html>

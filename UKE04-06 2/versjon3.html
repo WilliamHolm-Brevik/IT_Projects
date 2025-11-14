@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman versjon 3</title>
+    <link rel="stylesheet" href="stiler/stil.css" />
+</head>
+<body>
+    <div id="innpakning">
+        <h1>Hangman v3</h1>
+        <!-- ** NY FUNKSJONALITET ** -->
+        <div id="minModal" class="modal">
+            <div class="modal-content">
+                <select id="selKategori"></select>
+                <hr />
+                <input type="text" id="txtNavn" />
+                <button id="btnNavn" onclick="reg();">Skriv navn</button>
+            </div>
+        </div>
+        <!-- ** SLUTT PÅ NY FUNKSJONALITET ** -->
+        <!-- avrundet "lysbryter"-->
+        <label class="switch">
+            <input type="checkbox" class="slider" onclick="endre();">
+            <span class="slider"></span>
+        </label>
+        <!-- informasjon til spiller -->
+        <p id="sjanserIgjen">Antall sjanser igjen: </p>
+        <p id="riktigeBokstaver">Løsning: </p>
+        <p id="brukteBokstaver">Gjettede bokstaver: </p>
+        <!-- canvas til å tegne galge & hangman -->
+        <canvas width="500" height="400" id="canHangman"></canvas>
+        <!-- Bruker input -->
+        <p id="mottaBokstav">
+            <input type="text" id="txtBokstav" />
+
+            <button id="btnRestart" onclick="restart();">Prøv igjen</button>
+        </p>
+        <hr />
+        <p id="timer"></p>
+        <!-- ** NY FUNKSJONALITET ** -->
+        <hr />
+        <p id="info"></p>
+        <!-- ** SLUTT PÅ NY FUNKSJONALITET ** -->
+        <hr />
+        <p id="highScore"></p>
+    </div>
+    <script src="script/versjon3.js"></script>
+</body>
+</html>

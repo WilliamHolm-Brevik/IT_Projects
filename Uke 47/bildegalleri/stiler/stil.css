@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+
+}
+
+#container{
+    width: 500px;
+    margin: auto;
+
+}
+
+/*bilder på startsiden*/
+/*8 piksler mellom radene med små bilder*/
+#row > .column{
+    padding: 1px;
+    padding-top: 10px
+}
+
+
+
+/*lager jevnstore kolonner, her regner vi 100/antall bilder*/
+.column{
+    float: left;
+    width: 33%
+}
+
+/*thumbnails, disse overstyrer jeg med en container i LB etterpå*/
+
+img.page{
+    width: 100%;
+    height: 100%;
+}
+
+/*layout til modal (lightbox)*/
+.modal{
+    display: none; /*viser ikke ve oppstart*/
+    position: fixed;
+    z-index: 1; /*legger modal oppå siden*/
+    padding: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000;
+
+}
+
+.modal-content{
+    position: relative; /*plasseres i forhold til egen størrelse*/
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/*lukkeknapp - kan styles som tekst pga*/
+.close{
+    color: #FFFFFF;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+} 
+
+.close:hover{
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*frem- og tilbake knapper - kan styles som tekst pga unicode*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none; /*kan ikke markeres av bruker*/
+}
+
+.next{
+    right: 0; /*plasseres fremoverknappen til høyre*/
+}
+
+/*nummertekst 1/3 osv. */
+.numbertext{
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 8px, 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*plassering av bildettrekst*/
+.caption-container{
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 2px 16px;
+}
+/*legger enkel effekt på thumbnailene inni modalen*/
+img.demo{
+    width: 100%;
+    opacity: 0.6; /*60% sunnlighet*/
+}
+
+
+.demo:hover{
+    opacity: 1; /*100% sunnlighet*/
+}
+

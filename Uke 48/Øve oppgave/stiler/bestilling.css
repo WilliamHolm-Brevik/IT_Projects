@@ -1,0 +1,67 @@
+body{
+    font-family: 'Raubik Glitch', sans-serif;
+    background-color: #999999;
+}
+
+#main{
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 1024px;
+    height: 768px;
+    border: 2px solid #FFF;
+    padding: 5px;
+}
+
+#headline{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+/***********BESTILLING*********/
+#reg{
+    max-width: 400px;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    padding: 15px;
+    background-color: #D95244;
+    border-radius: 4px;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    box-sizing;: border-box
+}
+
+input[type="date"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    box-sizing;: border-box
+}
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    box-sizing;: border-box
+}
+
+button{
+    margin-top: 10px;
+    background-color: #000;
+    border: none;
+    color: #FFF;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}

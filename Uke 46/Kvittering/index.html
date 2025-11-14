@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvittering</title>
+    <link rel="stylesheet" href="stiler/stil.css" />
+</head>
+<body>
+    <!-- Legger lytter på list-->
+    <select id="selVarer" onchange="velgVarer();">
+        <option value="65">Frossen Pizza</option>
+        <option value="30">Pepsi Max</option>
+        <option value="25">Brød</option>
+        <option value="15">Tyggegummi</option>
+        <option value="20">Kjøttdeig</option>
+        <option value="20">Pasta</option>
+        <option value="119">Ost</option>
+        <option value="35">Saft</option>
+        <option value="50">Kaffe</option>
+    </select>
+    <p>
+        <button id="btnPris" onclick="pris();">Vis Pris</button>
+    </p>
+    <p id="utskrift"></p>
+    <script src="script/script1.js"></script>
+</body>
+</html>
